@@ -10,9 +10,10 @@ Where NAME and COMMAND are rispectively the name of the desktop entry and the co
 
 ```bash
 sudo bash entry.sh NAME COMMAND
-
 ```
 
 make an alias for speeding up 
 
+```bash
 alias desktop='sudo bash [ENTRY-FOLDER-WITHOUT-PARENTESIS] entry.sh'
+```
