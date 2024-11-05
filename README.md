@@ -15,5 +15,5 @@ sudo bash entry.sh NAME COMMAND
 make an alias for speeding up 
 
 ```bash
-alias desktop='sudo bash [ENTRY-FOLDER-WITHOUT-PARENTESIS] entry.sh'
+alias desktop='sudo bash [ENTRY-FOLDER-WITHOUT-PARENTESIS]/entry.sh'
 ```
