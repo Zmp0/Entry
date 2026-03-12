@@ -7,7 +7,9 @@
 Run the script with the following syntax:
 
 NAME : name of the desktop entry
+
 COMMAND : the command for execute it
+
 ICON_PATH : the path to an icon of you want to add it,is optional.
 
 ### If you want to install it:
