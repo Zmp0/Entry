@@ -1,29 +1,31 @@
-#!#!/bin/bash
+#!/bin/bash
 
-# Check if the correct number of arguments are provided
 if [ "$#" -ne 2 ]; then
-    echo "Usage: ./entry.sh NAME COMMAND"
+    echo "Usage: ./entry.sh NAME COMMAND ICON_PATH
+
+--------------------------------------------------
+- NAME : Name of the desktop entry name.           
+- COMMAND : Command to execute when launching.   
+- ICON_PATH : Is optional,if not given does not display an icon.
+--------------------------------------------------
+"
     exit 1
 fi
 
-# Assign variables to the arguments provided by the user
 NAME=$1
 COMMAND=$2
+ICON_PATH=$3
 
-# Define the directory where the desktop entry will be created
 DESKTOP_DIR="/usr/share/applications"
-
-# Create the desktop entry file
 DESKTOP_FILE="$DESKTOP_DIR/$NAME.desktop"
 
-# Write the desktop entry content using the user-provided NAME and COMMAND
 cat > "$DESKTOP_FILE" <<EOL
 [Desktop Entry]
 Type=Application
 Name=$NAME
 Comment=
 Exec=$COMMAND
-Icon=/usr/share/icons/Numix/48/apps/ppa.svg
+Icon=$ICON_PATH
 Terminal=False
 Categories=
 Keywords=
