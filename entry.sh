@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -lt 2 ] || ["$#" -gt 3]; then
     echo "Usage: ./entry.sh NAME COMMAND ICON_PATH
 
 --------------------------------------------------
