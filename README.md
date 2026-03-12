@@ -6,15 +6,25 @@
 
 Run the script with the following syntax:
 
-Where NAME and COMMAND are rispectively the name of the desktop entry and the command for execute it
+NAME : name of the desktop entry
+COMMAND : the command for execute it
+ICON_PATH : the path to an icon of you want to add it,is optional.
+
+### If you want to install it:
 
 ```bash
-sudo cp entry.sh /usr/bin/entry 
+git clone https://github.com/Zmp0/Entry.git && cd Entry && sudo cp entry.sh /usr/bin/entry 
 ```
 
 Usage:
 
 ```bash
-entry.sh NAME "COMMAND" ICON_PATH
+sudo entry NAME "COMMAND" ICON_PATH
+```
+
+### If you don't want to install it,just run:
+
+```bash
+sudo entry.sh NAME "COMMAND" ICON_PATH
 ```
 
