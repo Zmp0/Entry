@@ -9,11 +9,12 @@ Run the script with the following syntax:
 Where NAME and COMMAND are rispectively the name of the desktop entry and the command for execute it
 
 ```bash
-sudo bash entry.sh NAME COMMAND
+sudo cp entry.sh /usr/bin/entry 
 ```
 
-make an alias for speeding up 
+Usage:
 
 ```bash
-alias desktop='sudo bash [ENTRY-FOLDER-WITHOUT-PARENTESIS]/entry.sh'
+entry.sh NAME "COMMAND" ICON_PATH
 ```
+
